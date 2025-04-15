@@ -14,9 +14,9 @@
     <li>To find the are under a curve, enter a rate for x, the vertical line andfunction, for example 2:4|x^3.</li>
   </ul>
   <section>
-    <form>
+    <form action="/score" method="post">
       <label for="kind-operation">
-        <select name="operation">
+        <select id="operation" name="operation">
           <option disabled>Choose operation</option>
           <option>Simplify</option>
           <option>Derive</option>
@@ -35,10 +35,12 @@
           <option>Factor</option>
         </select>
       </label>
+    <input type="text" name="expression" placeholder="Enter expression">
+    <% if ((operation) && operation.error) { %>
+        <%= operation.error %>
+    <% } %>
+    <button type="submit">Calculate</button>
     </form>
-  </section>
-  <section>
-    <input placeholder="Enter expression"></input>
     <h4>Score: </h4>
   </section>
 </body>
