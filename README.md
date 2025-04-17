@@ -1,4 +1,4 @@
-This micro service does anything from numerical calculation to symbolic math parsing.
+This micro service does anything from numerical calculation to symbolic math parsing. Most of the operations are based on Newton API.
 
 How does it work?
 Send a GET request to newton with a url-encoded math expression and your preferred operation.
