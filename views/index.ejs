@@ -22,8 +22,6 @@
           <option>Derive</option>
           <option>Integrate</option>
           <option>Find 0's</option>
-          <option>Find Tangent</option>
-          <option>Area Under Curve</option>
           <option>Cosine</option>
           <option>Sine</option>
           <option>Tangent</option>
@@ -42,6 +40,9 @@
     <button type="submit">Calculate</button>
     </form>
     <h4>Score: </h4>
+    <% if(operation && operation.result){ %>
+      <%= operation.result %>
+    <% } %> 
   </section>
 </body>
 

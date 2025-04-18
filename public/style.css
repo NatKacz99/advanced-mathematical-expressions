@@ -1,0 +1,74 @@
+body{
+  background: linear-gradient(rgba(121, 106, 106, 0.6), rgba(87, 75, 75, 0.9)),
+  url("calculation.png") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+h2{
+  color:white
+}
+
+.introduction{
+  background: linear-gradient(rgba(109, 124, 170, 0.6), rgba(87, 75, 75, 0.9));
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(230, 232, 236, 0.6), rgba(210, 201, 201, 0.9));
+  margin-top: 40px;
+  margin-left: 180px;
+  margin-right: 180px;
+  padding-bottom:10px;
+  border-radius: 15px;
+}
+
+.choice{
+  display: flex;
+  flex-direction: column;
+}
+
+.error{
+  color: red;
+}
+
+select:focus, input:focus{
+  border-color: blueviolet;
+  outline: none;
+  border-width: 3px;
+}
+
+button{
+  border-radius: 5px;
+  background-color: blueviolet;
+  margin-top: 10px;
+}
+
+button:hover{
+  background-color: rgb(122, 37, 201);
+  cursor: pointer;
+}
+
+@media (max-width: 767px){
+  body{
+    box-sizing: border-box;
+    background-size: 100% 100%;
+  }
+
+  .container{
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0
+  }
+}
